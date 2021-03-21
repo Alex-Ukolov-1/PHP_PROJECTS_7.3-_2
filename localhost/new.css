@@ -1,0 +1,361 @@
+
+ .square 
+{
+	width: 200px;
+	height: 100px;
+	background: red;"
+}
+
+.menu-main {
+	text-align:center;
+  list-style: none;
+  margin: 0;
+  padding: 20px;
+  float: none;
+}
+ 
+
+
+.top-menu {
+  background: white;
+  box-shadow: 3px 0 7px rgba(0,0,0,.3);
+  padding: 20px;
+}
+.top-menu:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.menu-main li {display: inline-block;}
+.menu-main a {
+  text-decoration: none;
+  display: block;
+  position: relative;
+  line-height: 61px;
+  padding-left: 20px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-family: 'Arimo', sans-serif;
+  font-weight: bold;
+  color: #708090;
+  transition:.3s linear;
+}
+.menu-main a:before {
+  content: "";
+  width: 9px;
+  height: 9px;
+  background: #708090;
+  position: relative;
+  transform: rotate(45deg) translateX(6.5px);
+  opacity: 0;
+  transition: .3s linear;
+}
+.menu-main a:hover:before {opacity: 1;}
+@media (max-width: 660px) {
+.menu-main {
+  float: center;
+}
+.top-menu {
+  text-align: center;
+  padding: 40px 0 0 0;
+}
+
+    .red{
+        text-align:center;
+    }
+    .menu-main {
+        text-align:center;
+        list-style: none;
+        margin: 20px;
+        padding: 0;
+        float: none;
+    }
+
+
+    .red
+    {
+        text-align:center;
+    }
+
+.menu-main a {padding: 0 10px;}
+.menu-main a:before {transform: rotate(45deg) translateX(-6px);}
+}
+@media (max-width: 600px) {
+.menu-main li {display: block;}
+}
+.image {
+	position	: relative;
+	width		: 100%; /* for IE 6 */
+}
+
+h1 {
+	position	: absolute;
+	top		: 100px;
+	width		: 100%;
+	font-size:280px;
+	color:white;
+	text-align: center;
+}
+
+.US {
+ background:f79c5c;
+width:100%;
+height:700PX;
+vertical-align: middle;
+ position: fixed;
+    left: 0;
+    display: flex;
+    align-items: center;
+    align-content: center; 
+    justify-content: center; 
+    overflow: auto;   
+}
+div.scrollmenu {
+    background-color: #708090;
+    overflow: auto;
+    white-space: nowrap;
+	position:relative;
+	top:30px;
+	width:100%;
+	text-align:center;
+}
+
+div.scrollmenu a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+
+div.scrollmenu a:hover {
+    background-color: #777;
+}
+
+
+body {background: #F9F9F9;}
+.frame-outer {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  border: 10px solid #00BFFF;
+  padding: 10px;
+}
+.frame-inner {
+  text-align: center;
+  position: relative;
+  border: 10px solid #00BFFF;
+ }
+.frame-outer:before, 
+.frame-outer:after, 
+.frame-inner:before, 
+.frame-inner:after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: #F9F9F9;
+  background-image: linear-gradient(90deg, #0000FF 33%, rgba(255,255,255,0) 33%, rgba(255,255,255,0) 66%, #0000FF 66%, #0000FF),
+  linear-gradient(90deg, #0000FF 33%, rgba(255,255,255,0) 33%, rgba(255,255,255,0) 66%, #0000FF 66%, #0000FF);
+  background-repeat: no-repeat;
+  background-size: 30px 10px;
+  background-position: 0 0, 0 20px;
+}
+
+div.red{
+text-align:center;
+}
+
+.close
+{
+ background:#708090;
+width:100%;
+height:700PX;
+position:absolute;
+vertical-align: middle;
+ position: fixed;
+    left: 0;
+    display: flex;
+    align-items: center;
+    align-content: center; 
+    justify-content: center; 
+    overflow: auto;   
+}
+
+
+.container {
+  position: relative;
+  width: 500px;
+  height: 300px;
+  float:left;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0);
+  transition: background 0.5s ease;
+}
+
+.container:hover .overlay {
+  display: block;
+  background: rgba(0, 0, 0, .3);
+}
+
+img {
+  position: absolute;
+  width: 500px;
+  height: 300px;
+  left: 0;
+}
+
+.title {
+  position: absolute;
+  width: 500px;
+  left: 0;
+  top: 120px;
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  z-index: 1;
+  transition: top .5s ease;
+}
+
+.container:hover .title {
+  top: 90px;
+}
+
+.button {
+  position: absolute;
+  width: 500px;
+  left:0;
+  top: 180px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity .35s ease;
+}
+
+.button a {
+  width: 200px;
+  padding: 12px 48px;
+  text-align: center;
+  color: white;
+  border: solid 2px white;
+  z-index: 1;
+}
+
+.container:hover .button {
+  opacity: 1;
+}
+
+
+.dave1 {
+  position: relative;
+  width: 30%;
+  height: 300px;
+  float:left;
+  width:50%;
+}
+
+.overlay1 {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0);
+  transition: background 0.5s ease;
+}
+
+.dave1:hover .overlay1 {
+  display: block;
+  background: rgba(0, 0, 0, .3);
+}
+
+img {
+  position: absolute;
+  width: 500px;
+  height: 300px;
+  left: 0;
+}
+
+.title1 {
+  position: absolute;
+  width: 500px;
+  left: 0;
+  top: 120px;
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  z-index: 1;
+  transition: top .5s ease;
+}
+
+.dave1:hover .title1 {
+  top: 90px;
+}
+
+.button1 {
+  position: absolute;
+  width: 500px;
+  left:0;
+  top: 180px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity .35s ease;
+}
+
+.button1 a {
+  width: 200px;
+  padding: 12px 48px;
+  text-align: center;
+  color: white;
+  border: solid 2px white;
+  z-index: 1;
+}
+
+.dave1:hover .button1 {
+  opacity: 1;
+}
+
+.reload{
+	width:80%;
+	opacity:80%;
+	height:400px;
+}
+
+.square
+{
+	width: 200px;
+	height: 50px;
+	background: red;
+	text-align:center;
+	vertical-align: middle;
+	font-size: 100%;    
+	border:0px;
+	opacity:100%;
+}
+
+.double
+{
+	text-align:center;
+	padding-top:50px;
+	width: 450px;
+	height: 600px;
+	background: black;
+	opacity:70%;
+	position:absolute;
+	z-index:4;
+	border:2px;
+	float:right; margin:0 25% 0 3%;
+	color:white;
+}
+

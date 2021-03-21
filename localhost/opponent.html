@@ -1,0 +1,91 @@
+<html>
+<head>
+<style>
+
+.dave1 {
+  position: relative;
+  width: 30%;
+  height: 300px;
+  float:left;
+  width:50%;
+}
+
+.overlay1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0);
+  transition: background 0.5s ease;
+}
+
+.dave1:hover .overlay1 {
+  display: block;
+  background: rgba(0, 0, 0, .3);
+}
+
+img {
+  position: relative;
+  width: 500px;
+  height: 300px;
+  left: 0;
+}
+
+.title1 {
+  position: absolute;
+  width: 500px;
+  left: 0;
+  top: 120px;
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  z-index: 1;
+  transition: top .5s ease;
+}
+
+.dave1:hover .title1 {
+  top: 90px;
+}
+
+.button1 {
+  position: absolute;
+  width: 500px;
+  left:0;
+  top: 180px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity .35s ease;
+}
+
+.button1 a {
+  width: 200px;
+  padding: 12px 48px;
+  text-align: center;
+  color: white;
+  border: solid 2px white;
+  z-index: 1;
+}
+
+.dave1:hover .button1 {
+  opacity: 1;
+}
+</style>
+</head>
+<body>
+<div class="dave1">
+  <img src="lexa1.jpg" alt="" style="width:100%"/>
+  <p class="title1" style="align:center">card title</p>
+  <div class="overlay1"></div>
+  <div class="button1"><a href="#"> BUTTON </a></div>
+</div>
+<div class="dave1" style="float:left;width:50%;">
+  <img src="lexa1.jpg" alt="" style="width:100%"/>
+  <p class="title1">card title</p>
+  <div class="overlay1"></div>
+  <div class="button1"><a href="#"> BUTTON </a></div>
+</div>
+</body>
+</html>
